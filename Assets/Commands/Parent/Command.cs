@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Command : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+namespace Transfer.Commands {
+    public abstract class Command {
+        List<string> commands = new List<string>();
+        public abstract void Execute(string args);
+        public virtual void PreviousCommand(string command) { }
+    }
 }
