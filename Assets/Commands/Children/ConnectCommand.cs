@@ -7,10 +7,11 @@ namespace Transfer.Commands {
     public class ConnectCommand : TerminalCommand {
         public override void Execute(string nameToConnectTo) {
             GetNodeData();
+            
         }
 
         public void GetNodeData() {
-            Debug.Log("CurNode");
+            Debug.Log("Node Data");
         }
     }
 }
